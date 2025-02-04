@@ -1,0 +1,4 @@
+components_by_slot:
+  slot_nav: []
+is_package: true
+layout: {type: 'form:Layouts.Dream'}

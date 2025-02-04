@@ -1,5 +1,6 @@
 allow_embedding: false
 name: Dream Theme
+native_deps: null
 package_name: Dream_Theme
 native_deps:
   head_html: |
@@ -11,11 +12,13 @@ native_deps:
     <script src="_/theme/anvil-m3/floating-ui/dom@1.6.10.js"></script>
 runtime_options:
   client_version: '3'
+  legacy_features: {__dict__: true, bootstrap3: true, class_names: true, root_container: true}
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
-  version: 2
+  version: 3
 services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
-startup_form: Form1
+startup: {module: Demo.Dream1, type: form}
+startup_form: null

@@ -1,6 +1,6 @@
 components: []
 container:
-  properties: {html: '@theme:anvil-m3/dream-layout.html'}
+  properties: {html: '@theme:dream-layout.html'}
   type: HtmlTemplate
 is_package: true
 slots:
