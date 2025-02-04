@@ -1,4 +1,12 @@
 components_by_slot:
-  slot_nav: []
+  slot_nav:
+  - layout_properties: {}
+    name: navigation_link_1
+    properties: {text: Nav 1}
+    type: form:_Components.NavigationLink
+  - layout_properties: {}
+    name: navigation_link_2
+    properties: {text: Nav 2}
+    type: form:_Components.NavigationLink
 is_package: true
 layout: {type: 'form:Layouts.Dream'}

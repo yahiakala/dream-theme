@@ -56,4 +56,4 @@ properties:
 - {default_value: false, description: 'If True, this component’s text will be underlined.', designer_hint: font-underline, group: Text, important: false, name: underline, type: boolean}
 - {default_value: false, description: 'If True, this component’s text will be bold.', designer_hint: font-bold, group: Text, important: false, name: bold, type: boolean}
 - {default_value: '', description: The color of the background of this component, group: Look and Feel, important: false, name: background_color, type: color}
-toolbox_item: {hidden: true}
+toolbox_item: {hidden: false, title: NavigationLink}
