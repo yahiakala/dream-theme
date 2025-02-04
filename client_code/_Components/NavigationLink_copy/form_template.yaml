@@ -19,7 +19,7 @@ container:
         </a>
       </div>
   type: HtmlTemplate
-custom_component: false
+custom_component: true
 custom_component_container: false
 event_bindings: {show: form_show}
 events:
