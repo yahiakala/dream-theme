@@ -1,0 +1,280 @@
+/* Dream Layout - A Material Design 3 layout component */
+
+:root {
+  --dream-primary: rgb(215, 115, 15);
+  --dream-on-primary: #FFFFFF;
+  --dream-primary-container: #FFE0C7;
+  --dream-on-primary-container: #4A2800;
+  --dream-secondary: rgb(215, 115, 15);
+  --dream-on-secondary: #FFFFFF;
+  --dream-secondary-container: #F5F5F5;
+  --dream-on-secondary-container: #1B1B1F;
+  --dream-surface: #FFFFFF;
+  --dream-on-surface: #1B1B1F;
+  --dream-surface-variant: #F0F0F0;
+  --dream-outline: #DDDDDD;
+}
+
+/* Override theme background color */
+body {
+  background-color: #FFFFFF !important;
+}
+
+.anvil-m3-dream-content {
+  background-color: #FFFFFF !important;
+}
+
+/* Navigation Rail */
+.anvil-m3-dream-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 8;
+  top: 0;
+  left: 0px !important;
+  background: var(--dream-surface);
+  width: 256px !important;
+  height: 100%;
+  border-right: 1px solid var(--dream-outline);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Account Section */
+.anvil-m3-dream-account-section {
+  padding: 16px;
+  border-bottom: 1px solid var(--dream-outline);
+  width: 256px;
+}
+
+.anvil-m3-dream-nav-content {
+  display: flex;
+  width: 256px;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  flex: 1;
+}
+
+/* Navigation Items */
+.anvil-m3-dream-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--dream-on-surface);
+  border-radius: 6px;
+  position: relative;
+  font-size: 13px;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.anvil-m3-dream-nav-item:hover {
+  background-color: var(--dream-surface-variant);
+}
+
+.anvil-m3-dream-nav-item.active {
+  background-color: var(--dream-secondary-container);
+  color: var(--dream-on-secondary-container);
+}
+
+.anvil-m3-dream-nav-label {
+  font-weight: 500;
+}
+
+.anvil-m3-dream-nav-item .premium-icon {
+  position: absolute;
+  right: 16px;
+  color: var(--dream-outline);
+}
+
+/* Navigation Link Styling */
+.anvil-m3-dream-nav .anvil-m3-navigation-link {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-radius: 100px;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link .anvil-m3-navigation-link-icon-label {
+  flex-direction: row;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link .anvil-m3-navigation-link-text {
+  margin: 0px;
+  padding: 0px;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link [anvil-name=anvil-m3-navigation-link-icon] {
+  margin: 0px;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected [anvil-name=anvil-m3-navigation-link-icon] {
+  background: transparent;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected {
+  background-color: var(--anvil-m3-secondary-container);
+  color: var(--anvil-m3-on-secondary-container);
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link:hover {
+  background-color: var(--anvil-m3-dark-overlay-1);
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link:active,
+.anvil-m3-dream-nav .anvil-m3-navigation-link:focus {
+  background-color: var(--anvil-m3-dark-overlay-2);
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected:hover {
+  background: linear-gradient(0deg, var(--anvil-m3-dark-overlay-1) 0%, var(--anvil-m3-dark-overlay-1) 100%), var(--anvil-m3-secondary-container);
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected:active,
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected:focus {
+  background: linear-gradient(0deg, var(--anvil-m3-dark-overlay-2) 0%, var(--anvil-m3-dark-overlay-2) 100%), var(--anvil-m3-secondary-container);
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link:hover [anvil-name=anvil-m3-navigation-link-icon],
+.anvil-m3-dream-nav .anvil-m3-navigation-link:focus [anvil-name=anvil-m3-navigation-link-icon],
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected:hover [anvil-name=anvil-m3-navigation-link-icon],
+.anvil-m3-dream-nav .anvil-m3-navigation-link.anvil-m3-navigation-link-selected:focus [anvil-name=anvil-m3-navigation-link-icon] {
+  background: unset;
+}
+
+.anvil-m3-dream-nav .anvil-m3-navigation-link-icon-container {
+  margin: 0;
+}
+
+/* Top App Bar */
+.anvil-m3-dream-top-bar {
+  display: none;
+  background: var(--dream-surface);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.anvil-m3-dream-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.anvil-m3-dream-menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+/* Content Area */
+.anvil-m3-dream-content {
+  top: 0;
+  padding: 24px;
+  position: relative;
+  background: var(--dream-surface);
+}
+
+@media(min-width: 600px) {
+  .anvil-m3-dream-content {
+    left: 256px;
+    width: calc(100% - 256px);
+  }
+}
+
+/* Scrim */
+.anvil-m3-dream-scrim {
+  display: none;
+}
+
+/* Mobile Adaptations */
+@media(max-width: 600px) {
+  /* Bottom App Bar Mode */
+  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar {
+    bottom: 0;
+    top: unset;
+    height: 80px;
+    width: 100%;
+    padding: 12px 8px 16px 8px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar .anvil-m3-dream-nav-content {
+    margin-top: 0px;
+    flex-direction: row;
+    width: auto;
+    height: 80px;
+    justify-content: center;
+    column-gap: 8px;
+    flex: 0;
+  }
+
+  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar .anvil-m3-dream-account-section {
+    width: auto;
+    border: none;
+    padding: 0;
+  }
+
+  /* Modal Navigation Drawer Mode */
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer {
+    width: 360px;
+    max-width: 90vw;
+    height: 100%;
+    padding: 28px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    left: -101%;
+    border-radius: 0 20px 20px 0;
+    transition: left .25s;
+  }
+
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer.shown {
+    left: 0px;
+  }
+
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer .anvil-m3-dream-nav-content {
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer .anvil-m3-dream-account-section {
+    width: 100%;
+    padding: 0 0 12px 0;
+  }
+
+  /* Content Adjustments */
+  .anvil-m3-dream-content.anvil-m3-bottom-app-bar {
+    margin-bottom: 80px;
+  }
+
+  /* Top Bar */
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer + .anvil-m3-dream-top-bar {
+    padding: 20px 16px 24px;
+    justify-content: space-between;
+    align-items: start;
+    display: flex !important;
+    width: 100%;
+    column-gap: 24px;
+    position: relative;
+  }
+
+  /* Menu Button */
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer + .anvil-m3-dream-top-bar .anvil-m3-dream-menu-btn {
+    display: flex;
+  }
+
+  /* Scrim */
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer.shown ~ .anvil-m3-dream-scrim {
+    background-color: rgba(0, 0, 0, 0.32);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: block;
+  }
+}

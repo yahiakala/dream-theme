@@ -1,0 +1,35 @@
+<!-- Left Side Navigation -->
+<nav class="anvil-m3-dream-nav">
+  <!-- Account Section -->
+  <div class="anvil-m3-dream-account-section" anvil-slot="anvil-m3-dream-account-content">
+    <p anvil-if-slot-empty="anvil-m3-dream-account-content" class="anvil-designer-only" style="font-style: italic;">Add account section here</p>
+  </div>
+
+  <!-- Main Navigation Content -->
+  <div class="anvil-m3-dream-nav-content" anvil-slot="anvil-m3-dream-nav-content">
+    <p anvil-if-slot-empty="anvil-m3-dream-nav-content" class="anvil-designer-only" style="font-style: italic;">Add navigation links here</p>
+  </div>
+</nav>
+
+<!-- Top App Bar (Mobile) -->
+<header class="anvil-m3-dream-top-bar">
+  <div class="anvil-m3-dream-title-container">
+    <button anvil-name="anvil-m3-dream-menu-btn" class="anvil-m3-dream-menu-btn">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <div anvil-slot="anvil-m3-dream-app-title" class="anvil-m3-dream-app-title">
+      <span anvil-if-slot-empty="anvil-m3-dream-app-title" class="anvil-designer-only" style="font-style: italic;">Drop optional title here</span>
+    </div>
+  </div>
+  <div class="anvil-m3-dream-app-bar-links" anvil-slot="anvil-m3-dream-app-bar-links">
+    <span anvil-if-slot-empty="anvil-m3-dream-app-bar-links" class="anvil-designer-only" style="font-style: italic;">Drop optional icon buttons here</span>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="anvil-m3-dream-content" anvil-slot="anvil-m3-dream-content">
+  <p anvil-if-slot-empty="anvil-m3-dream-content" class="anvil-designer-only" style="font-style: italic;">Add content here</p>
+</main>
+
+<!-- Overlay/Scrim -->
+<div anvil-name="anvil-m3-dream-scrim" class="anvil-m3-dream-scrim"></div>
