@@ -1,0 +1,12 @@
+components_by_slot:
+  slot_nav:
+  - layout_properties: {}
+    name: link_1
+    properties: {icon: 'fa:500px', text: wefwefew}
+    type: Link
+  - layout_properties: {}
+    name: link_2
+    properties: {icon: 'fa:500px', text: wefwefwef}
+    type: Link
+is_package: true
+layout: {type: 'form:Layouts.Dream'}
