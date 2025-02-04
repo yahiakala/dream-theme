@@ -22,11 +22,3 @@ services:
 startup: {module: Demo.Dream1, type: form}
 startup_form: null
 toolbox: {hide_classic_components: true}
-toolbox_sections:
-- description: Use navigation components to navigate between parts of your app
-  items:
-  - component: {type: m3._Components.NavigationLink}
-    icon: {dark: 'asset:designer_icons/navigation_link_dark.svg', light: 'asset:designer_icons/navigation_link.svg'}
-    title: NavigationLink
-  packageName: m3
-  title: Navigation
