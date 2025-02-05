@@ -13,7 +13,8 @@ class Account(AccountTemplate):
         self._props = properties        
         self._cleanup = noop
         self._menuNode = self.dom_nodes['account-menu-container']
-        self._btnNode = self.dom_nodes['account-expand']
+        self._btnNode = self.dom_nodes['account-container']  # Use whole container instead of just expand button
+        self._expandIcon = self.dom_nodes['account-expand']
         self._open = False
         self._has_focus = False
         self._hoverIndex = None
@@ -21,7 +22,7 @@ class Account(AccountTemplate):
         
         self.init_components(**properties)
         
-        self._btnNode.addEventListener('click', self._handle_click)
+        self._expandIcon.addEventListener('click', self._handle_click)
         
         self.add_event_handler("x-anvil-page-added", self._on_mount)
         self.add_event_handler("x-anvil-page-removed", self._on_cleanup)
@@ -45,7 +46,7 @@ class Account(AccountTemplate):
             self._cleanup = fui.auto_update(
                 self._btnNode,
                 self._menuNode,
-                placement="bottom-start"
+                placement="bottom-end"  # Align with right edge since expand is on right
             )
 
     def _handle_click(self, event):
@@ -61,7 +62,7 @@ class Account(AccountTemplate):
         
         if value:
             self._setup_fui()
-            icon = self._btnNode.querySelector('.material-icons')
+            icon = self._expandIcon.querySelector('.material-icons')
             icon.innerText = 'expand_less'
             # Get children for keyboard navigation
             self._children = self.get_components()
@@ -69,7 +70,7 @@ class Account(AccountTemplate):
             self._update_hover_styles()
         else:
             self._cleanup()
-            icon = self._btnNode.querySelector('.material-icons')
+            icon = self._expandIcon.querySelector('.material-icons')
             icon.innerText = 'expand_more'
             self._hoverIndex = None
             self._clear_hover_styles()
