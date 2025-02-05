@@ -1,6 +1,15 @@
 components_by_slot:
   slot_account:
-  - layout_properties: {}
+  - components:
+    - layout_properties: {slot: account-menu-slot}
+      name: menu_item_1
+      properties: {text: weffwe}
+      type: form:_Components.MenuItem
+    - layout_properties: {slot: account-menu-slot}
+      name: menu_item_2
+      properties: {text: wefef}
+      type: form:_Components.MenuItem
+    layout_properties: {}
     name: account_1
     properties: {}
     type: form:_Components.Account
