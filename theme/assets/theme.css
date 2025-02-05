@@ -1,5 +1,7 @@
 @import '_/theme/dream-layout.css';
 @import '_/theme/navigation-link.css';
+@import '_/theme/account.css';
+
 
 :root {
   --anvil-m3-primary: %color:Primary%;

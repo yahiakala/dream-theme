@@ -1,5 +1,7 @@
 unique_ids:
   assets:
+    account.css: '1738729759703489735493066.6666'
+    account.html: '1738729783821707384489514.7236'
     anvil-m3/floating-ui/core@1.6.7.js: MKTVXNATEOOGU2NLCRCLECSJUGYW6SQN
     anvil-m3/floating-ui/dom@1.6.10.js: SOISTU5P46WEJ5V5YIDYYXUNV6ZYTGJN
     dream-layout.css: C3WMIYFKFORNLZOCKF7LUJU6MCME6TIS
@@ -10,6 +12,7 @@ unique_ids:
   forms:
     Demo.Dream1: '1738637454643103974867036.06895'
     Layouts.Dream: '1738637258823223691522891.20264'
+    _Components.Account: '1738729747691611237648733.2518'
     _Components.NavigationLink: '1738693935886857814234011.7283'
   modules:
     Demo: '1738635769599752486525702.0132'
