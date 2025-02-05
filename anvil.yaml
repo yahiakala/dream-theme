@@ -1,5 +1,5 @@
 allow_embedding: false
-name: Dream Themee
+name: Dream Theme
 native_deps:
   head_html: |
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,7 +9,7 @@ native_deps:
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="_/theme/anvil-m3/floating-ui/core@1.6.7.js"></script>
     <script src="_/theme/anvil-m3/floating-ui/dom@1.6.10.js"></script>
-package_name: Dream_Themee
+package_name: Dream_Theme
 runtime_options:
   client_version: '3'
   legacy_features: {__dict__: true, bootstrap3: true, class_names: true, root_container: true}
