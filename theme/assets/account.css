@@ -1,5 +1,5 @@
 .md-nav-profile {
-  padding: 16px;
+  /* padding: 16px; */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -10,8 +10,10 @@
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
+  /* background-color: var(--md-sys-color-primary); */
+  background-color: rgb(215, 115, 15);
+  /* color: var(--md-sys-color-on-primary); */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;

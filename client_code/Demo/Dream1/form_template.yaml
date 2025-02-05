@@ -1,4 +1,9 @@
 components_by_slot:
+  slot_account:
+  - layout_properties: {}
+    name: account_1
+    properties: {}
+    type: form:_Components.Account
   slot_nav:
   - layout_properties: {}
     name: navigation_link_1
