@@ -80,7 +80,10 @@ class NavigationLink(NavigationLinkTemplate):
     ifs = get_unset_value(
       self.dom_nodes['anvil-m3-navigation-link-icon'], "fontSize", self.icon_size
     )
-    return {"font_size": tfs, "icon_size": ifs, "spacing": sp}
+    ifs2 = get_unset_value(
+        self.dom_nodes['anvil-m3-navigation-link-icon-right'], "fontSize", self.icon_size
+    )
+    return {"font_size": tfs, "icon_size": ifs, "spacing": sp, "icon_right_size": ifs2}
 
   #!componentEvent(m3.NavigationLink)!1: {name: "click", description: "When the NavigationLink is clicked."}
   #!componentEvent(m3.NavigationLink)!1: {name: "show", description: "When the NavigationLink is shown on the screen."}
@@ -116,9 +119,11 @@ class NavigationLink(NavigationLinkTemplate):
   underline = underline_property('anvil-m3-navigation-link-text')
   text_color = color_property('anvil-m3-navigation-link-text', 'color', 'text_color')
   icon_color = color_property('anvil-m3-navigation-link-icon', 'color', 'icon_color')
+  icon_right_color = color_property('anvil-m3-navigation-link-icon-right', 'color', 'icon_right_color')
   font_family = font_family_property('anvil-m3-navigation-link-text')
   font_size = font_size_property('anvil-m3-navigation-link-text', 'font_size')
   icon_size = font_size_property('anvil-m3-navigation-link-icon', 'icon_size')
+  icon_right_size = font_size_property('anvil-m3-navigation-link-icon-right', 'icon_right_size')
   tooltip = tooltip_property('anvil-m3-navigation-link-container')
   spacing = spacing_property('anvil-m3-navigation-link-container')
   background_color = color_property(
@@ -136,6 +141,14 @@ class NavigationLink(NavigationLinkTemplate):
   @anvil_prop
   def icon(self, value):
     link_icon = self.dom_nodes['anvil-m3-navigation-link-icon']
+    if value:
+      link_icon.className = ""
+      link_icon.classList.add("material-symbols-outlined")
+      link_icon.innerText = value[3:]
+
+  @anvil_prop
+  def icon_right(self, value):
+    link_icon = self.dom_nodes['anvil-m3-navigation-link-icon-right']
     if value:
       link_icon.className = ""
       link_icon.classList.add("material-symbols-outlined")
