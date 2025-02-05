@@ -22,5 +22,6 @@ components_by_slot:
     name: navigation_link_2
     properties: {bold: false, icon: 'mi:settings', text: Settings}
     type: form:_Components.NavigationLink
+  slot_tenant: []
 is_package: true
 layout: {type: 'form:Layouts.Dream'}

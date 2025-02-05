@@ -16,3 +16,7 @@ slots:
     index: 0
     set_layout_properties: {slot: anvil-m3-dream-nav-content}
     target: {name: '', type: container}
+  slot_tenant:
+    index: 0
+    set_layout_properties: {slot: anvil-m3-dream-tenant-content}
+    target: {name: '', type: container}
