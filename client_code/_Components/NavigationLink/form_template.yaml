@@ -14,7 +14,7 @@ container:
             </div>
             <div anvil-name="anvil-m3-navigation-link-text" class="anvil-m3-navigation-link-text"></div>
             <div class="anvil-m3-navigation-link-icon-right-container">
-                <span anvil-name="anvil-m3-navigation-link-icon-right" class="material-symbols-outlined">star</span>
+              <span anvil-name="anvil-m3-navigation-link-icon-right" class="material-icons"></span>
             </div>
           </div>
 

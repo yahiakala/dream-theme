@@ -151,7 +151,7 @@ class NavigationLink(NavigationLinkTemplate):
     link_icon = self.dom_nodes['anvil-m3-navigation-link-icon-right']
     if value:
       link_icon.className = ""
-      link_icon.classList.add("material-symbols-outlined")
+      link_icon.classList.add("material-icons")
       link_icon.innerText = value[3:]
 
   @anvil_prop

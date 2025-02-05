@@ -32,7 +32,7 @@
   margin-bottom: 14px;
 }
   
-.anvil-m3-navigation-link [anvil-name=anvil-m3-navigation-link-icon] {
+.anvil-m3-navigation-link [anvil-name=anvil-m3-navigation-link-icon], .anvil-m3-navigation-link [anvil-name=anvil-m3-navigation-link-icon-right] {
   transition: background 0.2s;
   padding: 0; 
   border-radius: 16px;
