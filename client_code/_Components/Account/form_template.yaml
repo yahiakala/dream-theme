@@ -1,10 +1,32 @@
 components: []
 container:
   properties:
-    html: |-
-      <center style="font-style:italic; color:#888; margin: 3em;">
-        (Insert your custom HTML here)
-      </center>
-      <div anvil-slot="default"></div>
+    html: '@theme:account.html'
   type: HtmlTemplate
+custom_component: true
 is_package: true
+properties:
+  - name: username
+    type: string
+    default_value: User
+    description: The username to display
+    group: Content
+    important: true
+  
+  - name: plan
+    type: string
+    default_value: Free plan
+    description: The plan text to display
+    group: Content
+    important: true
+  
+  - name: avatar_text
+    type: string
+    default_value: U
+    description: The text to display in the avatar circle
+    group: Content
+    important: true
+
+events:
+  - name: click
+    description: When the expand button is clicked
