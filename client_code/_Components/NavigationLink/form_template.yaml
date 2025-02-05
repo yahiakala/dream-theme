@@ -51,7 +51,12 @@ properties:
   include_none_option: true
   name: icon
   type: icon
-- {default_value: '', group: Key Properties, important: true, name: icon_right, type: icon, iconsets: [material-icons]}
+- default_value: ''
+  group: Key Properties
+  iconsets: [material-icons]
+  important: true
+  name: icon_right
+  type: icon
 - {default_binding_prop: true, default_value: null, description: The Form to navigate to when the link is clicked, group: Key Properties, important: true, name: navigate_to, type: form}
 - {description: The margin and padding (pixels) of the component., group: Layout, important: true, name: spacing, type: spacing}
 - {default_value: '', description: The text to display when the mouse is hovered over this component., group: Other, important: true, name: tooltip, type: string}

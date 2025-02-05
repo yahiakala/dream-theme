@@ -153,6 +153,12 @@ body {
   margin: 0;
 }
 
+.anvil-m3-dream-nav .anvil-m3-navigation-link-icon-right-container {
+    position: absolute;
+    right: 30px;
+    color: #DDDDDD;
+}
+
 /* Top App Bar */
 .anvil-m3-dream-top-bar {
   display: none;
