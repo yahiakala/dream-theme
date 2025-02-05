@@ -13,7 +13,7 @@ class Account(AccountTemplate):
         self._props = properties        
         self._cleanup = noop
         self._menuNode = self.dom_nodes['account-menu-container']
-        self._btnNode = self.dom_nodes['account-container']  # Use whole container instead of just expand button
+        self._btnNode = self.dom_nodes['account-container']
         self._expandIcon = self.dom_nodes['account-expand']
         self._open = False
         self._has_focus = False
@@ -43,10 +43,13 @@ class Account(AccountTemplate):
     def _setup_fui(self):
         if self._open:
             self._cleanup()
+            # Set menu width to match container width
+            container_width = self._btnNode.offsetWidth
+            self._menuNode.style.width = f"{container_width}px"
             self._cleanup = fui.auto_update(
                 self._btnNode,
                 self._menuNode,
-                placement="bottom-end"  # Align with right edge since expand is on right
+                placement="bottom-start"  # Align with left edge
             )
 
     def _handle_click(self, event):

@@ -1,0 +1,95 @@
+/***** Menu *****/
+.anvil-m3-menu-items-container { 
+  min-width: 112px;
+  min-height: 24px;
+  border-radius: 4px;
+  padding: 8px 0;
+  background-color: var(--md-sys-color-surface);
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  overflow-y: auto;
+  position: relative;
+  z-index: 1050;
+}
+
+.anvil-m3-menu-hidden {
+  pointer-events: none;
+  opacity: 0;
+  height: 1px;
+  overflow: hidden;
+}
+
+/***** MenuItems *****/
+.anvil-m3-menuItem-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.anvil-m3-menuItem-leadingIcon {
+  min-width: 24px;
+  margin-right: 12px;
+  display: none !important;
+}
+
+.anvil-m3-menuItem-leadingIcon.anvil-m3-menuItem-showLeadingIcon {
+  display: block !important;
+}
+
+.anvil-m3-menuItem-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.anvil-m3-menuItem-labelText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  padding-right: 24px;
+}
+
+.anvil-m3-menuItem-trailingText {
+  white-space: nowrap;
+  padding-right: 12px;
+}
+
+.anvil-m3-menuItem-core {
+  color: var(--md-sys-color-on-surface);
+}
+
+.anvil-m3-menuItem-aux {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* DISABLED */
+.anvil-m3-menuItem-disabled {
+  cursor: default !important;
+  background: var(--md-sys-color-surface) !important;
+}
+.anvil-m3-menuItem-disabled .anvil-m3-menuItem-core {
+  color: var(--md-sys-color-on-surface) !important;
+  opacity: .38 !important;
+}
+.anvil-m3-menuItem-disabled .anvil-m3-menuItem-aux {
+  color: var(--md-sys-color-on-surface) !important;
+  opacity: .38 !important;
+}
+
+/* hover */
+.anvil-m3-menuItem-container:hover, .anvil-m3-menuItem-container-keyboardHover {
+  background-color: var(--md-sys-color-surface-variant);
+  cursor: pointer;
+}
+
+.anvil-m3-menuItem-container:hover .anvil-m3-menuItem-core, .anvil-m3-menuItem-container-keyboardHover .anvil-m3-menuItem-core {
+  color: var(--md-sys-color-on-surface)
+}
+
+.anvil-m3-menuItem-container:hover .anvil-m3-menuItem-aux, .anvil-m3-menuItem-container-keyboardHover .anvil-m3-menuItem-aux {
+  color: var(--md-sys-color-on-surface-variant)
+}
