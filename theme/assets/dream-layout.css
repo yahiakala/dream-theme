@@ -108,7 +108,7 @@ body {
   margin: 0px;
   margin-left: 12px;
   padding: 0px;
-  font-weight: 500 !important;
+  /* font-weight: 500 !important; */
 }
 
 .anvil-m3-dream-nav .anvil-m3-navigation-link [anvil-name=anvil-m3-navigation-link-icon] {
