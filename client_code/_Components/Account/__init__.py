@@ -1,4 +1,5 @@
 from ._anvil_designer import AccountTemplate
+from anvil import *
 from anvil.js.window import document
 from ..._utils import fui, noop
 from ..._utils.properties import (
@@ -19,6 +20,7 @@ class Account(AccountTemplate):
         self._has_focus = False
         self._hoverIndex = None
         self._children = None
+        self._design_name = ""
         
         self.init_components(**properties)
         
@@ -30,6 +32,7 @@ class Account(AccountTemplate):
     def _on_mount(self, **event_args):
         document.addEventListener('click', self._body_click)
         document.addEventListener('keydown', self._handle_keyboard_events)
+        self._menuNode.addEventListener('click', self._child_clicked)
         # Move menu to body to avoid container clipping
         document.body.append(self._menuNode)
         self._setup_fui()
@@ -37,6 +40,7 @@ class Account(AccountTemplate):
     def _on_cleanup(self, **event_args):
         document.removeEventListener('click', self._body_click)
         document.removeEventListener('keydown', self._handle_keyboard_events)
+        self._menuNode.removeEventListener('click', self._child_clicked)
         self._cleanup()
         self._menuNode.remove()
 
@@ -69,8 +73,7 @@ class Account(AccountTemplate):
             icon.innerText = 'expand_less'
             # Get children for keyboard navigation
             self._children = self.get_components()
-            self._hoverIndex = 0 if self._children else None
-            self._update_hover_styles()
+            self._hoverIndex = None  # Don't set a default hover index
         else:
             self._cleanup()
             icon = self._expandIcon.querySelector('.material-icons')
@@ -82,6 +85,10 @@ class Account(AccountTemplate):
         if (self._btnNode.contains(event.target) or 
                 self._menuNode.contains(event.target)):
             return
+        self._toggle_menu_visibility(False)
+
+    def _child_clicked(self, event):
+        # do the click action. The child should handle this
         self._toggle_menu_visibility(False)
 
     def _handle_keyboard_events(self, event):
@@ -164,6 +171,10 @@ class Account(AccountTemplate):
 
     def _on_select_other(self):
         self._toggle_menu_visibility(False)
+
+    def form_show(self, **event_args):
+        if designer.in_designer:
+            self._design_name = designer.get_design_name(self)
 
     username = innerText_property('account-username', 'username')
     plan = innerText_property('account-plan', 'plan')
