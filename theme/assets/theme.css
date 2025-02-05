@@ -5,6 +5,21 @@
 
 
 :root {
+  /* Material Design 3 System Colors */
+  --md-sys-color-primary: rgb(215, 115, 15);
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #FFE0C7;
+  --md-sys-color-on-primary-container: #4A2800;
+  --md-sys-color-secondary: rgb(215, 115, 15);
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-secondary-container: #F5F5F5;
+  --md-sys-color-on-secondary-container: #1B1B1F;
+  --md-sys-color-surface: #FFFFFF;
+  --md-sys-color-on-surface: #1B1B1F;
+  --md-sys-color-surface-variant: #F0F0F0;
+  --md-sys-color-outline: #DDDDDD;
+
+  /* Anvil M3 Variables */
   --anvil-m3-primary: %color:Primary%;
   --anvil-m3-primary-container: %color:Primary Container%;
   --anvil-m3-on-primary: %color:On Primary%;
@@ -50,5 +65,4 @@
   --anvil-m3-on-surface-variant-overlay-2: %color:On Surface Variant Overlay 2%;
   --anvil-m3-inverse-on-surface-overlay-1: %color:Inverse On Surface Overlay 1%;
   --anvil-m3-inverse-on-surface-overlay-2: %color:Inverse On Surface Overlay 2%;
-
 }
