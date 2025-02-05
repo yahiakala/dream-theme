@@ -48,6 +48,14 @@ body {
   width: 256px;
 }
 
+/* Tenant Section */
+.anvil-m3-dream-tenant-section {
+  padding: 16px;
+  border-top: 1px solid var(--dream-outline);
+  width: 256px;
+  margin-top: auto;
+}
+
 .anvil-m3-dream-nav-content {
   display: flex;
   width: 256px;
@@ -221,7 +229,8 @@ body {
     flex: 0;
   }
 
-  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar .anvil-m3-dream-account-section {
+  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar .anvil-m3-dream-account-section,
+  .anvil-m3-dream-nav.anvil-m3-bottom-app-bar .anvil-m3-dream-tenant-section {
     width: auto;
     border: none;
     padding: 0;
@@ -248,7 +257,8 @@ body {
     padding-top: 24px;
   }
 
-  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer .anvil-m3-dream-account-section {
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer .anvil-m3-dream-account-section,
+  .anvil-m3-dream-nav.anvil-m3-modal-navigation-drawer .anvil-m3-dream-tenant-section {
     width: 100%;
     padding: 0 0 12px 0;
   }
