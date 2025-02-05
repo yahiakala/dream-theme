@@ -144,6 +144,23 @@ class Account(AccountTemplate):
                 'anvil-m3-menuItem-container'
             ].classList.toggle('anvil-m3-menuItem-container-keyboardHover', True)
 
+    def _anvil_get_interactions_(self):
+        return [
+            {
+                "type": "designer_events",
+                "callbacks": {
+                    "onSelectDescendent": self._on_select_descendent,
+                    "onSelectOther": self._on_select_other,
+                },
+            }
+        ]
+
+    def _on_select_descendent(self):
+        self._toggle_menu_visibility(True)
+
+    def _on_select_other(self):
+        self._toggle_menu_visibility(False)
+
     username = innerText_property('account-username', 'username')
     plan = innerText_property('account-plan', 'plan')
     avatar_text = innerText_property('account-avatar', 'avatar_text')
