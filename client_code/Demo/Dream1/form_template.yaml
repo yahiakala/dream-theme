@@ -22,6 +22,27 @@ components_by_slot:
     name: navigation_link_2
     properties: {bold: false, icon: 'mi:settings', text: Settings}
     type: form:_Components.NavigationLink
-  slot_tenant: []
+  slot_tenant:
+  - components:
+    - layout_properties: {}
+      name: text_tenant
+      properties: {icon: 'mi:globe', text: Tenant}
+      type: form:dep_nohkk29uciwuh3:_Components.Text
+    - components:
+      - layout_properties: {}
+        name: icon_button_1
+        properties: {appearance: standard}
+        type: form:dep_nohkk29uciwuh3:_Components.IconButton
+      - name: icon_button_2
+        properties: {}
+        type: form:dep_nohkk29uciwuh3:_Components.IconButton
+      layout_properties: {}
+      name: flow_panel_2
+      properties: {align: right, gap: none, spacing_above: none, spacing_below: none}
+      type: FlowPanel
+    layout_properties: {}
+    name: flow_panel_1
+    properties: {align: justify, spacing_above: none, spacing_below: none, vertical_align: middle}
+    type: FlowPanel
 is_package: true
 layout: {type: 'form:Layouts.Dream'}
