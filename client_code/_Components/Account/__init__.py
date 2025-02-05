@@ -10,8 +10,7 @@ from ..._utils.properties import (
 
 class Account(AccountTemplate):
     def __init__(self, **properties):
-        self.init_components(**properties)
-        self._props = properties
+        self._props = properties        
         self._cleanup = noop
         self._menuNode = self.dom_nodes['account-menu-container']
         self._btnNode = self.dom_nodes['account-expand']
@@ -19,6 +18,8 @@ class Account(AccountTemplate):
         self._has_focus = False
         self._hoverIndex = None
         self._children = None
+        
+        self.init_components(**properties)
         
         self._btnNode.addEventListener('click', self._handle_click)
         
