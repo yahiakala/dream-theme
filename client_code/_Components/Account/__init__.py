@@ -11,6 +11,7 @@ from ..._utils.properties import (
 class Account(AccountTemplate):
     def __init__(self, **properties):
         self.init_components(**properties)
+        self._props = properties
         self._cleanup = noop
         self._menuNode = self.dom_nodes['account-menu-container']
         self._btnNode = self.dom_nodes['account-expand']
