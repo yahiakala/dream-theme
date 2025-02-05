@@ -66,3 +66,7 @@
   --anvil-m3-inverse-on-surface-overlay-1: %color:Inverse On Surface Overlay 1%;
   --anvil-m3-inverse-on-surface-overlay-2: %color:Inverse On Surface Overlay 2%;
 }
+
+body {
+  background-color: #FFFFFF !important;
+}
