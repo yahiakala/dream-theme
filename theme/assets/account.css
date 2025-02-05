@@ -4,6 +4,7 @@
   align-items: center;
   gap: 12px;
   border-bottom: 1px solid var(--md-sys-color-outline);
+  position: relative;
 }
 
 .md-nav-avatar {
@@ -53,4 +54,78 @@
 
 .md-icon-button:hover {
   background-color: var(--md-sys-color-surface-variant);
+}
+
+/* Menu styles */
+.account-menu-container {
+  position: absolute;
+  z-index: 1000;
+  min-width: 112px;
+  padding: 8px 0;
+  border-radius: 4px;
+  background-color: var(--md-sys-color-surface);
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+.account-menu-hidden {
+  display: none;
+}
+
+/* Menu item styles */
+.anvil-m3-menuItem-container {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 12px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--md-sys-color-on-surface);
+}
+
+.anvil-m3-menuItem-container:hover {
+  background-color: var(--md-sys-color-surface-variant);
+}
+
+.anvil-m3-menuItem-container-keyboardHover {
+  background-color: var(--md-sys-color-surface-variant);
+}
+
+.anvil-m3-menuItem-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.anvil-m3-menuItem-labelText {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.anvil-m3-menuItem-aux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anvil-m3-menuItem-leadingIcon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.anvil-m3-menuItem-trailingIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.anvil-m3-menuItem-disabled {
+  opacity: 0.38;
+  pointer-events: none;
 }
