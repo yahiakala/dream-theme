@@ -48,7 +48,7 @@
 
 /* Tenant Section */
 .anvil-m3-dream-tenant-section {
-  padding: 16px;
+  padding: 0px 16px;
   border-top: 1px solid var(--dream-outline);
   width: 256px;
   margin-top: auto;
@@ -104,6 +104,11 @@
   font-size: 13px;
   justify-content: space-between;
   padding: 8px 12px;
+}
+.anvil-m3-dream-tenant-section .anvil-m3-iconbutton-icon {
+    font-size: 20px !important;
+    vertical-align: middle;
+    color: var(--anvil-m3-on-surface-variant);
 }
 
 .anvil-m3-dream-nav .anvil-m3-navigation-link .anvil-m3-navigation-link-icon-label {
