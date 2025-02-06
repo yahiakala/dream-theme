@@ -10,5 +10,9 @@ components_by_slot:
       appearance: outlined
       items: [Item1, Item2, Item3]
     type: form:dep_nohkk29uciwuh3:_Components.DropdownMenu
+  - layout_properties: {}
+    name: text_box_1
+    properties: {appearance: outlined, label: wefewf}
+    type: form:dep_nohkk29uciwuh3:_Components.TextInput.TextBox
 is_package: true
 layout: {type: 'form:Demo.Dream1'}
