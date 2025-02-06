@@ -47,14 +47,14 @@
   height: 56px;
   display: grid;
   grid-template-columns: 16px auto 1fr;
-  grid-template-rows: 8px 15px auto 1fr 4px; /* Increased first row from 4px to 8px */
+  grid-template-rows: 8px 8px auto 1fr 8px; /* Equal spacing top and bottom */
 }
 
 /* Focus and Placeholder States */
 .anvil-m3-textinput-input:focus + .anvil-m3-textinput-border,
 :not(.anvil-m3-textinput-input:placeholder-shown) + .anvil-m3-textinput-border,
 .anvil-m3-textinput-input.anvil-m3-has-placeholder + .anvil-m3-textinput-border {
-  grid-template-rows: 8px 0fr auto 1fr 4px; /* Match the 8px top row */
+  grid-template-rows: 8px 0fr auto 1fr 8px; /* Keep consistent 8px spacing */
 }
 
 .anvil-m3-textinput-border.with-icon {
