@@ -13,7 +13,7 @@
 .anvil-m3-textinput-input {
   height: 56px;
   min-height: 56px;
-  padding: 16px 16px 8px;
+  padding: 24px 16px 8px;
   border-radius: var(--text-input-border-radius) var(--text-input-border-radius) 0 0;
   border: none;
   box-shadow: inset 0 -1px 0 var(--anvil-m3-filled-border);
@@ -62,7 +62,7 @@
 .anvil-m3-textinput-input.anvil-m3-has-placeholder + .anvil-m3-textinput-border .anvil-m3-textinput-label-text {
   font-size: 12px;
   padding-top: 4px;
-  transform: translate(0, -35%);
+  transform: translate(0, -125%);
 }
 
 .anvil-m3-textinput-border.with-icon {
@@ -132,7 +132,7 @@
 .anvil-m3-textinput.outlined .anvil-m3-textinput-input.anvil-m3-has-placeholder + .anvil-m3-textinput-border .anvil-m3-textinput-label-text {
   font-size: 12px;
   padding: 0 4px;
-  transform: translate(0, -100%);
+  transform: translate(0, -200%);
 }
 
 .anvil-m3-textinput.outlined .anvil-m3-textinput-input:focus.has_label_text {
