@@ -13,7 +13,7 @@
 .anvil-m3-textinput-input {
   height: 56px;
   min-height: 56px;
-  padding: 8px 16px 8px;
+  padding: 28px 16px 8px;
   border-radius: var(--text-input-border-radius) var(--text-input-border-radius) 0 0;
   border: none;
   box-shadow: inset 0 -1px 0 var(--anvil-m3-filled-border);
@@ -63,6 +63,10 @@
   font-size: 12px;
   padding-top: 4px;
   transform: translate(0, -55%);
+}
+
+.anvil-m3-textinput-input:focus.has_label_text {
+  padding-top: 14px;
 }
 
 .anvil-m3-textinput-border.with-icon {
@@ -136,6 +140,6 @@
 }
 
 .anvil-m3-textinput.outlined .anvil-m3-textinput-input:focus.has_label_text {
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 8px;
 }
