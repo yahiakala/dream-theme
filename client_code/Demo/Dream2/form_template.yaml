@@ -9,6 +9,7 @@ components_by_slot:
     properties:
       appearance: outlined
       items: [Item1, Item2, Item3]
+      label: ''
     type: form:dep_nohkk29uciwuh3:_Components.DropdownMenu
   - layout_properties: {}
     name: text_box_1
