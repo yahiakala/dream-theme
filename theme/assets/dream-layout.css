@@ -106,7 +106,7 @@
   padding: 8px 12px;
 }
 .anvil-m3-dream-tenant-section .anvil-m3-iconbutton-icon {
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
     vertical-align: middle;
     color: var(--anvil-m3-on-surface-variant);
 }
@@ -196,6 +196,19 @@
   position: relative;
   background: var(--dream-surface);
 }
+.anvil-m3-dream-content .anvil-m3-textinput-input {
+    height: 40px !important;
+    min-height: 40px !important;
+    /* border-radius: 8px; */
+}
+.anvil-m3-dream-content .anvil-m3-textinput-border {
+    height: 40px;
+}
+.anvil-m3-dream-content .anvil-m3-textinput.outlined .anvil-m3-textinput-border { 
+    border-color: var(--anvil-m3-outlined-border);
+    /* border-radius: 18px !important;  */
+}
+
 
 @media(min-width: 600px) {
   .anvil-m3-dream-content {

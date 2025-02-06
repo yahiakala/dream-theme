@@ -31,10 +31,11 @@ components_by_slot:
     - components:
       - layout_properties: {}
         name: icon_button_1
-        properties: {appearance: standard}
+        properties: {appearance: standard, icon: 'mi:settings'}
         type: form:dep_nohkk29uciwuh3:_Components.IconButton
-      - name: icon_button_2
-        properties: {}
+      - layout_properties: {}
+        name: icon_button_2
+        properties: {icon: 'mi:unfold_more'}
         type: form:dep_nohkk29uciwuh3:_Components.IconButton
       layout_properties: {}
       name: flow_panel_2
@@ -46,3 +47,8 @@ components_by_slot:
     type: FlowPanel
 is_package: true
 layout: {type: 'form:Layouts.Dream'}
+slots:
+  slot_content:
+    index: 0
+    set_layout_properties: {}
+    target: {name: slot_content, type: slot}

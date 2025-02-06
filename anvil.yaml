@@ -24,6 +24,6 @@ services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
-startup: {module: Demo.Dream1, type: form}
+startup: {module: Demo.Dream2, type: form}
 startup_form: null
 toolbox: {hide_classic_components: true}
